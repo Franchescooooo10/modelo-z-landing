@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing • Modelo Z</title>
+  <meta name="description" content="Ejemplo de landing usando el patrón de lectura en Z. 100% estática para GitHub Pages." />
+  <link rel="preload" href="assets/img/hero.jpg" as="image">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- 1. Barra superior: Logo (izquierda) → navegación/CTA (derecha) -->
+  <header class="header">
+    <div class="container header__content">
+      <a class="brand" href="#">
+        <img src="assets/img/logo.svg" alt="Logo" class="brand__logo" />
+        <span class="brand__name">Z-Layout</span>
+      </a>
+
+      <nav class="nav" aria-label="Principal">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="menu">☰</button>
+        <ul id="menu" class="nav__list">
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#caracteristicas">Características</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn--primary" href="#cta">Probar gratis</a></li> <!-- CTA superior -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2. Hero: Titular + texto convincente en el centro del trazo Z -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <h1>Diseños que guían la mirada</h1>
+        <p class="lead">
+          Aplica el <strong>Modelo Z</strong> para que tus visitantes encuentren
+          logo, mensaje y llamada a la acción en un flujo natural.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#cta">Comenzar ahora</a>
+          <a class="btn btn--ghost" href="#beneficios">Ver cómo funciona</a>
+        </div>
+      </div>
+      <figure class="hero__media">
+        <img src="assets/img/hero.jpg" alt="Ejemplo visual del patrón Z" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3. Bloque de beneficios (trayecto diagonal de la Z) -->
+  <section id="beneficios" class="section">
+    <div class="container">
+      <h2>¿Por qué usar el Modelo Z?</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Claridad</h3>
+          <p>Ordena la información según el recorrido natural de lectura.</p>
+        </article>
+        <article class="card">
+          <h3>Enfoque</h3>
+          <p>Prioriza logo, texto clave y botón de acción sin distracciones.</p>
+        </article>
+        <article class="card">
+          <h3>Conversión</h3>
+          <p>Conduce al usuario hacia el CTA principal de forma fluida.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Características (apoya el recorrido central) -->
+  <section id="caracteristicas" class="section alt">
+    <div class="container">
+      <h2>Características del layout</h2>
+      <ul class="features">
+        <li><strong>Z superior:</strong> logo a la izquierda, menú/CTA a la derecha.</li>
+        <li><strong>Diagonal:</strong> titular + mensaje + imagen de apoyo.</li>
+        <li><strong>Z inferior:</strong> CTA final visible (abajo a la derecha).</li>
+        <li><strong>Responsive:</strong> se adapta a móvil y escritorio.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5. CTA final (abajo derecha de la Z) -->
+  <section id="cta" class="section cta">
+    <div class="container cta__box">
+      <div>
+        <h2>¿Listo para probar?</h2>
+        <p>Publica esta landing en GitHub Pages y valida tu diseño hoy.</p>
+      </div>
+      <a class="btn btn--primary btn--lg" href="#">Crear cuenta</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <small>© 2025 Z-Layout. Patrón de lectura en Z para aprendizaje.</small>
+      <a href="#" class="footer__link">Aviso de privacidad</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
